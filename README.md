@@ -36,6 +36,12 @@
 
 - pom 文件中插件版本的统一管理,需引入另外一个jar包 ```framework-plugin-pom```
 
+> branch manage
+
+- 每个小版本开启一个分支, 在分支上开发。
+
+- 开发完成合并到master上。
+
 
 
 
