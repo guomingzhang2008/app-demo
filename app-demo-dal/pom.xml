@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>app-demo</artifactId>
+        <groupId>com.ryo</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>app-demo-dal</artifactId>
+
+    <name>App :: Module :: Dal</name>
+    <description>数据库访问层</description>
+
+
+    <dependencies>
+        <!--============================== self ==============================-->
+        <!--<dependency>-->
+            <!--<groupId>com.ryo</groupId>-->
+            <!--<artifactId>app-demo-util</artifactId>-->
+        <!--</dependency>-->
+
+        <!--============================== framework ==============================-->
+        <dependency>
+            <groupId>com.ryo</groupId>
+            <artifactId>framework-data</artifactId>
+        </dependency>
+
+
+    </dependencies>
+
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.mybatis.generator</groupId>
+                <artifactId>mybatis-generator-maven-plugin</artifactId>
+                <dependencies>
+                    <dependency>
+                        <groupId>${project.groupId}</groupId>
+                        <artifactId>app-demo-dal</artifactId>
+                        <version>${project.version}</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

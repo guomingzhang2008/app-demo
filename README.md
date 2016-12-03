@@ -30,3 +30,12 @@
 - 集成测试层
 
 
+> 约定
+
+- 所有的 spring 配置文件必须以 ```applicationContext-*``` 形式命名
+
+- pom 文件中插件版本的统一管理,需引入另外一个jar包 ```framework-plugin-pom```
+
+
+
+

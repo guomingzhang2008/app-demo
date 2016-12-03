@@ -9,7 +9,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>dal</artifactId>
+    <artifactId>app-demo-biz</artifactId>
 
+
+    <name>App :: Module :: Biz</name>
+    <description>业务逻辑层</description>
 
 </project>

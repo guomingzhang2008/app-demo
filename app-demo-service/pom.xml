@@ -9,7 +9,9 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>biz</artifactId>
+    <artifactId>app-demo-service</artifactId>
 
+    <name>App :: Module :: Service</name>
+    <description>服务层</description>
 
 </project>
