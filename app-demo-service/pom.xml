@@ -26,6 +26,10 @@
             <groupId>com.ryo</groupId>
             <artifactId>framework-business</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.ryo</groupId>
+            <artifactId>framework-cache</artifactId>
+        </dependency>
 
         <!--============================== other ==============================-->
 

@@ -2,6 +2,7 @@ package com.ryo.app.demo.test.service;
 
 import com.ryo.app.demo.dal.model.Article;
 import com.ryo.app.demo.service.ArticleService;
+import com.ryo.framework.util.LoggerUtil;
 import lombok.extern.log4j.Log4j2;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -19,7 +20,8 @@ import java.util.List;
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = {"classpath:/spring/applicationContext-beans.xml",
         "classpath:/spring/applicationContext-aop.xml",
-        "classpath:/spring/applicationContext-tx.xml",})
+        "classpath:/spring/applicationContext-tx.xml",
+        "classpath:/spring/applicationContext-redis.xml",})
 public class ArticleServiceTest {
 
     @Resource
@@ -28,7 +30,14 @@ public class ArticleServiceTest {
     @Test
     public void queryAllArticlesByPageTest() {
         int pageNum = 1;
-        List<Article> articleList =articleService.queryAllArticlesByPage(pageNum);
+        List<Article> articleList = articleService.queryAllArticlesByPage(pageNum);
         log.info("查询结果:{}", articleList);
+    }
+
+    @Test
+    public void queryArticle() {
+        Long id = 1L;
+        Article article = articleService.queryArticle(id);
+        LoggerUtil.info(log, "query result: {}", article);
     }
 }

@@ -114,6 +114,11 @@
                 <artifactId>framework-view</artifactId>
                 <version>${com.ryo.framework.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.ryo</groupId>
+                <artifactId>framework-cache</artifactId>
+                <version>${com.ryo.framework.version}</version>
+            </dependency>
 
         </dependencies>
     </dependencyManagement>

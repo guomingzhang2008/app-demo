@@ -6,10 +6,11 @@ import javax.persistence.Column;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import java.io.Serializable;
 import java.util.Date;
 
 @Data
-public class Article {
+public class Article implements Serializable {
     /**
      * 主键, 自增
      */
