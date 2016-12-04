@@ -14,4 +14,37 @@
     <name>App :: Module :: Test</name>
     <description>测试层</description>
 
+    <dependencies>
+        <!--============================== self ==============================-->
+        <dependency>
+            <groupId>com.ryo</groupId>
+            <artifactId>app-demo-util</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.ryo</groupId>
+            <artifactId>app-demo-dal</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.ryo</groupId>
+            <artifactId>app-demo-service</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.ryo</groupId>
+            <artifactId>app-demo-biz</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.ryo</groupId>
+            <artifactId>app-demo-web</artifactId>
+        </dependency>
+
+
+        <!--============================== framework ==============================-->
+        <dependency>
+            <groupId>com.ryo</groupId>
+            <artifactId>framework-quality</artifactId>
+        </dependency>
+
+
+    </dependencies>
+
 </project>

@@ -37,6 +37,7 @@
             <plugin>
                 <groupId>org.mybatis.generator</groupId>
                 <artifactId>mybatis-generator-maven-plugin</artifactId>
+                <version>${plugin.mybatis-generator.version}</version>
                 <dependencies>
                     <dependency>
                         <groupId>${project.groupId}</groupId>

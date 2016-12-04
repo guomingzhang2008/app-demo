@@ -44,7 +44,7 @@
 
 
         <!--============================== tables ==============================-->
-        <table tableName="table_name">
+        <table tableName="article">
             <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
         </table>
 
