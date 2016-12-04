@@ -4,6 +4,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <!--指定插件框架-->
+    <parent>
+        <groupId>com.ryo</groupId>
+        <artifactId>framework-plugin</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
     <groupId>com.ryo</groupId>
     <artifactId>app-demo</artifactId>
     <packaging>pom</packaging>
@@ -34,7 +41,6 @@
         <com.ryo.framework.version>1.0-SNAPSHOT</com.ryo.framework.version>
 
         <!--============================== plugin ==============================-->
-        <plugin.mybatis-generator.version>1.3.2</plugin.mybatis-generator.version>
     </properties>
 
 
@@ -95,6 +101,11 @@
             </dependency>
             <dependency>
                 <groupId>com.ryo</groupId>
+                <artifactId>framework-business</artifactId>
+                <version>${com.ryo.framework.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.ryo</groupId>
                 <artifactId>framework-quality</artifactId>
                 <version>${com.ryo.framework.version}</version>
             </dependency>
@@ -102,9 +113,17 @@
         </dependencies>
     </dependencyManagement>
 
-    <build>
-        <plugins>
+    <distributionManagement>
+        <repository>
+            <id>releases</id>
+            <name>Nexus Releases Repository</name>
+            <url>http://localhost:8081/nexus/content/repositories/releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>Nexus Snapshots Repository</name>
+            <url>http://localhost:8081/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
 
-        </plugins>
-    </build>
 </project>

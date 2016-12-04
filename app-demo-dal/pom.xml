@@ -17,10 +17,10 @@
 
     <dependencies>
         <!--============================== self ==============================-->
-        <!--<dependency>-->
-            <!--<groupId>com.ryo</groupId>-->
-            <!--<artifactId>app-demo-util</artifactId>-->
-        <!--</dependency>-->
+        <dependency>
+            <groupId>com.ryo</groupId>
+            <artifactId>app-demo-util</artifactId>
+        </dependency>
 
         <!--============================== framework ==============================-->
         <dependency>
@@ -37,7 +37,6 @@
             <plugin>
                 <groupId>org.mybatis.generator</groupId>
                 <artifactId>mybatis-generator-maven-plugin</artifactId>
-                <version>${plugin.mybatis-generator.version}</version>
                 <dependencies>
                     <dependency>
                         <groupId>${project.groupId}</groupId>

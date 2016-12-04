@@ -24,7 +24,7 @@
         <!--Xxx.java-->
         <!--<javaModelGenerator targetPackage="com.ryo.blog.service.model"-->
                             <!--targetProject="../blog-service-model/src/main/java">-->
-        <javaModelGenerator targetPackage="com.ryo.app.dal.model"
+        <javaModelGenerator targetPackage="com.ryo.app.demo.dal.model"
                             targetProject="src/main/java">
             <property name="enableSubPackages" value="true"/>
             <property name="trimStrings" value="true"/>
@@ -36,7 +36,7 @@
         </sqlMapGenerator>
 
         <!--XxxMapper.java-->
-        <javaClientGenerator type="XMLMAPPER" targetPackage="com.ryo.app.dal.mapper"
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.ryo.app.demo.dal.mapper"
                              targetProject="src/main/java">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>

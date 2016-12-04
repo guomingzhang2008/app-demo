@@ -1,4 +1,4 @@
-package com.ryo.util;
+package com.ryo.app.demo.util;
 
 /**
  * Created by houbinbin on 16/7/4.

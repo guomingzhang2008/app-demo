@@ -1,7 +1,7 @@
-package com.ryo.app.test.dal;
+package com.ryo.app.demo.test.dal;
 
-import com.ryo.app.dal.mapper.ArticleMapper;
-import com.ryo.app.dal.model.Article;
+import com.ryo.app.demo.dal.mapper.ArticleMapper;
+import com.ryo.app.demo.dal.model.Article;
 import lombok.extern.log4j.Log4j2;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

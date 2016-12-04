@@ -14,4 +14,20 @@
     <name>App :: Module :: Service</name>
     <description>服务层</description>
 
+    <dependencies>
+        <!--============================== self ==============================-->
+        <dependency>
+            <groupId>com.ryo</groupId>
+            <artifactId>app-demo-dal</artifactId>
+        </dependency>
+
+        <!--============================== framework ==============================-->
+        <dependency>
+            <groupId>com.ryo</groupId>
+            <artifactId>framework-business</artifactId>
+        </dependency>
+
+        <!--============================== other ==============================-->
+
+    </dependencies>
 </project>
