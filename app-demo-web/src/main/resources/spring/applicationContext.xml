@@ -1,0 +1,10 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--这种方式可以避免文件名称写错。。。-->
+    <import resource="applicationContext-view.xml"/>
+    <import resource="applicationContext-mvc.xml"/>
+
+</beans>
