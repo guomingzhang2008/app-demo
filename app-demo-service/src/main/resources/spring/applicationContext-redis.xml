@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:p="http://www.springframework.org/schema/p"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cache="http://www.springframework.org/schema/cache"
+       xmlns:aop="http://www.springframework.org/schema/aop"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
-		http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+		http://www.springframework.org/schema/beans/spring-beans-4.0.xsd http://www.springframework.org/schema/cache http://www.springframework.org/schema/cache/spring-cache.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!--启动cache-->
+    <!--<cache:annotation-driven />-->
 
     <bean id="poolConfig" class="redis.clients.jedis.JedisPoolConfig">
         <property name="maxTotal" value="1000"/>
@@ -30,10 +34,27 @@
         <constructor-arg ref="redisTemplate" />
     </bean>
 
+
     <!--自定义缓存配置-->
     <bean id="redisCacheConfig" class="com.ryo.app.demo.service.cache.RedisCacheConfig">
         <constructor-arg ref="jedisConnectionFactory" />
         <constructor-arg ref="redisTemplate" />
         <constructor-arg ref="redisCacheManager" />
     </bean>
+
+
+    <!--xml 指定缓存-->
+    <!--<cache:advice id="cacheAdvice" cache-manager="redisCacheManager">-->
+        <!--<cache:caching cache="users">-->
+            <!--<cache:cacheable method="findById" key=""/>-->
+            <!--<cache:cacheable method="find" key=""/>-->
+            <!--<cache:cache-evict method="clear*" all-entries="true"/>-->
+        <!--</cache:caching>-->
+    <!--</cache:advice>-->
+
+    <!--<aop:config proxy-target-class="false">-->
+        <!--<aop:pointcut id="servicePointcut" expression="execution(public * com.ryo.app.demo.service..*(..))"/>-->
+        <!--<aop:advisor advice-ref="cacheAdvice" pointcut-ref="servicePointcut"/>-->
+    <!--</aop:config>-->
+
 </beans>

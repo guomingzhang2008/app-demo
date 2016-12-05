@@ -40,4 +40,10 @@ public class ArticleServiceTest {
         Article article = articleService.queryArticle(id);
         LoggerUtil.info(log, "query result: {}", article);
     }
+
+    @Test
+    public void removeArticleTest() {
+        Long id = 1L;
+        articleService.removeArticle(id);
+    }
 }
