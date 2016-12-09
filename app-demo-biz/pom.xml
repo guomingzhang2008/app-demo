@@ -15,4 +15,13 @@
     <name>App :: Module :: Biz</name>
     <description>业务逻辑层</description>
 
+    <dependencies>
+        <!--============================== self ==============================-->
+        <dependency>
+            <groupId>com.ryo</groupId>
+            <artifactId>app-demo-service</artifactId>
+        </dependency>
+
+        <!--============================== framework ==============================-->
+    </dependencies>
 </project>

@@ -22,11 +22,6 @@
             <groupId>com.ryo</groupId>
             <artifactId>framework-util</artifactId>
         </dependency>
-        <dependency>
-            <groupId>com.ryo</groupId>
-            <artifactId>framework-common</artifactId>
-        </dependency>
-
 
     </dependencies>
 

@@ -26,10 +26,6 @@
         <!--============================== self ==============================-->
         <dependency>
             <groupId>com.ryo</groupId>
-            <artifactId>app-demo-service</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.ryo</groupId>
             <artifactId>app-demo-biz</artifactId>
         </dependency>
 
