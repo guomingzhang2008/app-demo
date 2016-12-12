@@ -26,6 +26,7 @@
         <module>app-demo-biz</module>
         <module>app-demo-web</module>
         <module>app-demo-test</module>
+        <module>app-demo-surface</module>
     </modules>
 
     <properties>
