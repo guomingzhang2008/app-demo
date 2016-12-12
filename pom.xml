@@ -14,7 +14,7 @@
     <groupId>com.ryo</groupId>
     <artifactId>app-demo</artifactId>
     <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.2-SNAPSHOT</version>
 
     <name>App :: Module :: Root</name>
     <description>根目录</description>
@@ -31,12 +31,13 @@
 
     <properties>
         <!--============================== self ==============================-->
-        <self.dal.version>1.0-SNAPSHOT</self.dal.version>
-        <self.service.version>1.0-SNAPSHOT</self.service.version>
-        <self.biz.version>1.0-SNAPSHOT</self.biz.version>
-        <self.web.version>1.0-SNAPSHOT</self.web.version>
-        <self.util.version>1.0-SNAPSHOT</self.util.version>
-        <self.test.version>1.0-SNAPSHOT</self.test.version>
+        <self.dal.version>1.0.2-SNAPSHOT</self.dal.version>
+        <self.service.version>1.0.2-SNAPSHOT</self.service.version>
+        <self.biz.version>1.0.2-SNAPSHOT</self.biz.version>
+        <self.web.version>1.0.2-SNAPSHOT</self.web.version>
+        <self.util.version>1.0.2-SNAPSHOT</self.util.version>
+        <self.test.version>1.0.2-SNAPSHOT</self.test.version>
+        <self.surface.version>1.0.2-SNAPSHOT</self.surface.version>
 
         <!--============================== framework ==============================-->
         <com.ryo.framework.version>1.0-SNAPSHOT</com.ryo.framework.version>
@@ -48,6 +49,11 @@
     <dependencyManagement>
         <dependencies>
             <!--============================== self ==============================-->
+            <dependency>
+                <groupId>com.ryo</groupId>
+                <artifactId>app-demo</artifactId>
+                <version>${project.version}</version>
+            </dependency>
             <dependency>
                 <groupId>com.ryo</groupId>
                 <artifactId>app-demo-util</artifactId>
@@ -77,6 +83,11 @@
                 <groupId>com.ryo</groupId>
                 <artifactId>app-demo-test</artifactId>
                 <version>${self.test.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.ryo</groupId>
+                <artifactId>app-demo-surface</artifactId>
+                <version>${self.surface.version}</version>
             </dependency>
 
             <!--============================== framework ==============================-->
