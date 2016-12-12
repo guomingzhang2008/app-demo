@@ -51,4 +51,11 @@ plugin 版本指定需要引入一个 ```pom``` 文件。
 
 
 
+# 版本号插件
+
+> http://www.dexcoder.com/selfly/article/4002
+
+
+
+
 
