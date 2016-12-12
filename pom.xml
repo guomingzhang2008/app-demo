@@ -31,13 +31,6 @@
 
     <properties>
         <!--============================== self ==============================-->
-        <self.dal.version>1.0.2-SNAPSHOT</self.dal.version>
-        <self.service.version>1.0.2-SNAPSHOT</self.service.version>
-        <self.biz.version>1.0.2-SNAPSHOT</self.biz.version>
-        <self.web.version>1.0.2-SNAPSHOT</self.web.version>
-        <self.util.version>1.0.2-SNAPSHOT</self.util.version>
-        <self.test.version>1.0.2-SNAPSHOT</self.test.version>
-        <self.surface.version>1.0.2-SNAPSHOT</self.surface.version>
 
         <!--============================== framework ==============================-->
         <com.ryo.framework.version>1.0-SNAPSHOT</com.ryo.framework.version>
@@ -57,37 +50,37 @@
             <dependency>
                 <groupId>com.ryo</groupId>
                 <artifactId>app-demo-util</artifactId>
-                <version>${self.util.version}</version>
+                <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.ryo</groupId>
                 <artifactId>app-demo-dal</artifactId>
-                <version>${self.dal.version}</version>
+                <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.ryo</groupId>
                 <artifactId>app-demo-service</artifactId>
-                <version>${self.service.version}</version>
+                <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.ryo</groupId>
                 <artifactId>app-demo-biz</artifactId>
-                <version>${self.biz.version}</version>
+                <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.ryo</groupId>
                 <artifactId>app-demo-web</artifactId>
-                <version>${self.web.version}</version>
+                <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.ryo</groupId>
                 <artifactId>app-demo-test</artifactId>
-                <version>${self.test.version}</version>
+                <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.ryo</groupId>
                 <artifactId>app-demo-surface</artifactId>
-                <version>${self.surface.version}</version>
+                <version>${project.version}</version>
             </dependency>
 
             <!--============================== framework ==============================-->
