@@ -14,7 +14,7 @@
     <groupId>com.ryo</groupId>
     <artifactId>app-demo</artifactId>
     <packaging>pom</packaging>
-    <version>1.0.2-SNAPSHOT</version>
+    <version>1.0.3-SNAPSHOT</version>
 
     <name>App :: Module :: Root</name>
     <description>根目录</description>
@@ -140,5 +140,21 @@
             <url>http://localhost:8081/nexus/content/repositories/snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
+
+    <build>
+        <plugins>
+            <!--versions-->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>versions-maven-plugin</artifactId>
+            </plugin>
+
+            <!--<plugin>-->
+                <!--<groupId>org.apache.maven.plugins</groupId>-->
+                <!--<artifactId>maven-archetype-plugin</artifactId>-->
+            <!--</plugin>-->
+
+        </plugins>
+    </build>
 
 </project>
