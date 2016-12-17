@@ -124,6 +124,16 @@
                 <artifactId>framework-cache</artifactId>
                 <version>${com.ryo.framework.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.ryo</groupId>
+                <artifactId>framework-generator</artifactId>
+                <version>${com.ryo.framework.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.ryo</groupId>
+                <artifactId>framework-checker</artifactId>
+                <version>${com.ryo.framework.version}</version>
+            </dependency>
 
         </dependencies>
     </dependencyManagement>

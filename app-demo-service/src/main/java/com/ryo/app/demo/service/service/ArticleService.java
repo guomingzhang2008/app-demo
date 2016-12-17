@@ -1,6 +1,7 @@
-package com.ryo.app.demo.service;
+package com.ryo.app.demo.service.service;
 
 import com.ryo.app.demo.dal.model.Article;
+import com.ryo.app.demo.service.bean.ArticleSerBean;
 
 import java.util.List;
 
@@ -46,4 +47,6 @@ public interface ArticleService {
      * 清除缓存
      */
     void clearCache();
+
+    void valid(ArticleSerBean articleSerBean);
 }

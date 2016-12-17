@@ -30,6 +30,14 @@
             <groupId>com.ryo</groupId>
             <artifactId>framework-cache</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.ryo</groupId>
+            <artifactId>framework-generator</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.ryo</groupId>
+            <artifactId>framework-checker</artifactId>
+        </dependency>
 
         <!--============================== other ==============================-->
 

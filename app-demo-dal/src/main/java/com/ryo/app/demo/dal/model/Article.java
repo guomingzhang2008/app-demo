@@ -9,6 +9,8 @@ import javax.persistence.Id;
 import java.io.Serializable;
 import java.util.Date;
 
+//import com.ryo.framework.
+
 @Data
 public class Article implements Serializable {
     /**
@@ -21,6 +23,9 @@ public class Article implements Serializable {
     /**
      * 标题
      */
+//    @com.ryo.framework.checker.annotation.Valid()
+//            @com.ryo.framework.checker.annotation.Valid()
+//            @Valid
     private String title;
 
     /**

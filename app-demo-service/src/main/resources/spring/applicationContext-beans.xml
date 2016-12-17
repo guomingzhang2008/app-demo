@@ -15,4 +15,8 @@
                                 <!--expression="org.springframework.web.bind.annotation.ControllerAdvice"/>-->
     </context:component-scan>
 
+
+    <!--参数校验-->
+    <bean id="checkService" class="com.ryo.framework.checker.service.impl.CheckServiceImpl"/>
+
 </beans>

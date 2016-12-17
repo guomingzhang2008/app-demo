@@ -1,7 +1,8 @@
-package com.ryo.app.demo.service.impl;
+package com.ryo.app.demo.service.service.impl;
 
 import com.ryo.app.demo.dal.model.Article;
-import com.ryo.app.demo.service.ArticleService;
+import com.ryo.app.demo.service.bean.ArticleSerBean;
+import com.ryo.app.demo.service.service.ArticleService;
 import com.ryo.framework.business.service.BaseService;
 import com.ryo.framework.util.LoggerUtil;
 import lombok.extern.log4j.Log4j2;
@@ -63,6 +64,11 @@ public class ArticleServiceImpl extends BaseService<Article> implements ArticleS
   @Override
   public void clearCache() {
     LoggerUtil.info(log, "clear all articles cache");
+  }
+
+  @Override
+  public void valid(ArticleSerBean articleSerBean) {
+    System.out.println(articleSerBean);
   }
 
 }

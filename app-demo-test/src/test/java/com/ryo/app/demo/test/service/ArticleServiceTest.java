@@ -1,7 +1,8 @@
 package com.ryo.app.demo.test.service;
 
 import com.ryo.app.demo.dal.model.Article;
-import com.ryo.app.demo.service.ArticleService;
+import com.ryo.app.demo.service.bean.ArticleSerBean;
+import com.ryo.app.demo.service.service.ArticleService;
 import com.ryo.framework.util.LoggerUtil;
 import lombok.extern.log4j.Log4j2;
 import org.junit.Test;
@@ -45,5 +46,13 @@ public class ArticleServiceTest {
     public void removeArticleTest() {
         Long id = 1L;
         articleService.removeArticle(id);
+    }
+
+    @Test
+    public void validTest() {
+        ArticleSerBean articleSerBean  = new ArticleSerBean();
+        articleSerBean.setId(1L);
+        articleSerBean.setTitle("hello");
+        articleService.valid(articleSerBean);
     }
 }
