@@ -64,7 +64,7 @@
     <!-- ensure that the above transactional advice runs for any execution
         of an operation defined by the FooService interface -->
     <aop:config>
-        <aop:pointcut id="serviceTxPointcut" expression="execution(public * com.ryo.app.demo.service..*(..))"/>
+        <aop:pointcut id="serviceTxPointcut" expression="execution(public * com.ryo.service..*(..))"/>
         <aop:advisor advice-ref="txAdvice" pointcut-ref="serviceTxPointcut"/>
     </aop:config>
 

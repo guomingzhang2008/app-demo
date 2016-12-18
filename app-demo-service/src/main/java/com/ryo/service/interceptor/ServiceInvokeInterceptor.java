@@ -1,6 +1,5 @@
 package com.ryo.service.interceptor;
 
-import com.ryo.framework.business.util.InterceptorUtil;
 import lombok.extern.log4j.Log4j2;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
@@ -40,8 +39,8 @@ public class ServiceInvokeInterceptor {
         startTime = System.currentTimeMillis();
         //add 调用次数
 
-        String info = InterceptorUtil.printJoinPoint(joinPoint);
-        log.info(info);
+//        String info = InterceptorUtil.printJoinPoint(joinPoint);
+//        log.info(info);
     }
 
     @After("myPointcut()")
