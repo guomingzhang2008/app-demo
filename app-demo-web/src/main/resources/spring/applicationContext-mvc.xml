@@ -34,7 +34,7 @@
     <mvc:interceptors>
         <mvc:interceptor>
             <mvc:mapping path="/**"/>
-            <bean class="com.ryo.framework.view.interceptor.ExceptionInterceptor"/>
+            <bean class="com.framework.framework.view.interceptor.ExceptionInterceptor"/>
         </mvc:interceptor>
     </mvc:interceptors>
 
@@ -79,7 +79,7 @@
     <mvc:view-controller path="/404" view-name="error/404"/>
     <mvc:view-controller path="/500" view-name="error/500"/>
 
-    <bean id="exceptionResolver" class="com.ryo.framework.view.exception.resolver.CustomSimpleMappingExceptionResolver">
+    <bean id="exceptionResolver" class="com.framework.framework.view.exception.resolver.CustomSimpleMappingExceptionResolver">
         <property name="exceptionMappings">
             <props>
                 <prop key=".NoHandlerFoundException">400</prop>

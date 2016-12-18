@@ -56,7 +56,7 @@
 		<property name="annotationClass" value="org.springframework.stereotype.Repository"/>
 		<property name="properties">
 			<value>
-				mappers=com.ryo.framework.data.mapper.MyMapper
+				mappers=com.framework.framework.data.mapper.MyMapper
 			</value>
 		</property>
 	</bean>

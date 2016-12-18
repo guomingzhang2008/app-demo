@@ -33,7 +33,7 @@
         <!--============================== self ==============================-->
 
         <!--============================== framework ==============================-->
-        <com.ryo.framework.version>1.0-SNAPSHOT</com.ryo.framework.version>
+        <com.framework.framework.version>1.0-SNAPSHOT</com.framework.framework.version>
 
         <!--============================== plugin ==============================-->
     </properties>
@@ -87,52 +87,52 @@
             <dependency>
                 <groupId>com.ryo</groupId>
                 <artifactId>framework</artifactId>
-                <version>${com.ryo.framework.version}</version>
+                <version>${com.framework.framework.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.ryo</groupId>
                 <artifactId>framework-util</artifactId>
-                <version>${com.ryo.framework.version}</version>
+                <version>${com.framework.framework.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.ryo</groupId>
                 <artifactId>framework-common</artifactId>
-                <version>${com.ryo.framework.version}</version>
+                <version>${com.framework.framework.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.ryo</groupId>
                 <artifactId>framework-data</artifactId>
-                <version>${com.ryo.framework.version}</version>
+                <version>${com.framework.framework.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.ryo</groupId>
                 <artifactId>framework-business</artifactId>
-                <version>${com.ryo.framework.version}</version>
+                <version>${com.framework.framework.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.ryo</groupId>
                 <artifactId>framework-quality</artifactId>
-                <version>${com.ryo.framework.version}</version>
+                <version>${com.framework.framework.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.ryo</groupId>
                 <artifactId>framework-view</artifactId>
-                <version>${com.ryo.framework.version}</version>
+                <version>${com.framework.framework.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.ryo</groupId>
                 <artifactId>framework-cache</artifactId>
-                <version>${com.ryo.framework.version}</version>
+                <version>${com.framework.framework.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.ryo</groupId>
                 <artifactId>framework-generator</artifactId>
-                <version>${com.ryo.framework.version}</version>
+                <version>${com.framework.framework.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.ryo</groupId>
                 <artifactId>framework-checker</artifactId>
-                <version>${com.ryo.framework.version}</version>
+                <version>${com.framework.framework.version}</version>
             </dependency>
 
         </dependencies>

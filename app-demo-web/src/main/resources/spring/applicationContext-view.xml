@@ -14,10 +14,10 @@
 
 
     <!--引入定义 freemarker 指令-->
-    <bean id="blockDirective" class="com.ryo.framework.view.freemarker.extend.BlockDirective"/>
-    <bean id="extendsDirective" class="com.ryo.framework.view.freemarker.extend.ExtendsDirective"/>
-    <bean id="overrideDirective" class="com.ryo.framework.view.freemarker.extend.OverrideDirective"/>
-    <bean id="superDirective" class="com.ryo.framework.view.freemarker.extend.SuperDirective"/>
+    <bean id="blockDirective" class="com.framework.framework.view.freemarker.extend.BlockDirective"/>
+    <bean id="extendsDirective" class="com.framework.framework.view.freemarker.extend.ExtendsDirective"/>
+    <bean id="overrideDirective" class="com.framework.framework.view.freemarker.extend.OverrideDirective"/>
+    <bean id="superDirective" class="com.framework.framework.view.freemarker.extend.SuperDirective"/>
 
 
     <!--<context:property-placeholder location="messages_zh_CN.properties"/>-->

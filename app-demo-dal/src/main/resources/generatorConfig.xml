@@ -10,11 +10,11 @@
 
         <!--base mapper-->
         <plugin type="tk.mybatis.mapper.generator.MapperPlugin">
-            <property name="mappers" value="com.ryo.framework.data.mapper.MyMapper"/>
+            <property name="mappers" value="com.framework.framework.data.mapper.MyMapper"/>
         </plugin>
 
         <!--lombok plugin-->
-        <plugin type="com.ryo.framework.data.util.LombokPlugin"/>
+        <plugin type="com.framework.framework.data.util.LombokPlugin"/>
 
         <!--jdbc driver-->
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
@@ -24,7 +24,7 @@
         <!--Xxx.java-->
         <!--<javaModelGenerator targetPackage="com.ryo.blog.service.model"-->
                             <!--targetProject="../blog-service-model/src/main/java">-->
-        <javaModelGenerator targetPackage="com.ryo.app.demo.dal.model"
+        <javaModelGenerator targetPackage="com.ryo.dal.model"
                             targetProject="src/main/java">
             <property name="enableSubPackages" value="true"/>
             <property name="trimStrings" value="true"/>
@@ -36,7 +36,7 @@
         </sqlMapGenerator>
 
         <!--XxxMapper.java-->
-        <javaClientGenerator type="XMLMAPPER" targetPackage="com.ryo.app.demo.dal.mapper"
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.ryo.dal.mapper"
                              targetProject="src/main/java">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>

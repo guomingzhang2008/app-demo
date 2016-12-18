@@ -17,6 +17,6 @@
 
 
     <!--参数校验-->
-    <bean id="checkService" class="com.ryo.framework.checker.service.impl.CheckServiceImpl"/>
+    <bean id="checkService" class="com.framework.framework.checker.service.impl.CheckServiceImpl"/>
 
 </beans>
