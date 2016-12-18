@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.ryo.app.demo.dal.mapper.ArticleMapper">
-  <resultMap id="BaseResultMap" type="com.ryo.app.demo.dal.model.Article">
+<mapper namespace="com.ryo.dal.mapper.ArticleMapper">
+  <resultMap id="BaseResultMap" type="com.ryo.dal.model.Article">
     <!--
       WARNING - @mbggenerated
     -->

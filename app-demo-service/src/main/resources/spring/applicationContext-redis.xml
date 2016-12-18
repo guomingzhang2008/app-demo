@@ -36,7 +36,7 @@
 
 
     <!--自定义缓存配置-->
-    <bean id="redisCacheConfig" class="com.ryo.app.demo.service.cache.RedisCacheConfig">
+    <bean id="redisCacheConfig" class="com.ryo.service.cache.RedisCacheConfig">
         <constructor-arg ref="jedisConnectionFactory" />
         <constructor-arg ref="redisTemplate" />
         <constructor-arg ref="redisCacheManager" />
