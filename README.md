@@ -3,7 +3,9 @@
 
 一个基础的maven多模块示范。
 
-本项目依赖于 ```com.ryo.framework``` 框架。
+本项目依赖于 ```com.framework.framework``` 框架。
+
+一方面是对框架的测试,另一方是创建个依赖于框架的项目模板。
 
 ## dao
 
